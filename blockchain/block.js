@@ -17,7 +17,7 @@ class Block {
   }
 
   static genesis() {
-    return new this('1526046095620', '------', 'fir57-h45h', []);
+    return new this('1526046095620', '------', 'fir57-h45h', 'Genesis');
   }
 
   static mineBlock(lastBlock, data) {
