@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run prettier-watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-test": "nodemon dev-test",
+    "prettier-watch": "onchange \"**/*.js\" -- prettier --print-width 100 --single-quote --write {{changed}}"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/LGLabGreg/Blockchain/issues"
   },
-  "homepage": "https://github.com/LGLabGreg/Blockchain#readme"
+  "homepage": "https://github.com/LGLabGreg/Blockchain#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.4",
+    "onchange": "^4.0.0",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
 }
