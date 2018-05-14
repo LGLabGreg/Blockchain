@@ -9,7 +9,8 @@
     "test": "jest --watchAll",
     "prettier-watch": "onchange \"**/*.js\" -- prettier --print-width 100 --single-quote --write {{changed}}",
     "server": "node ./app",
-    "dev-server": "nodemon ./app"
+    "dev-server": "nodemon ./app",
+    "dev-test": "nodemon dev-test"
   },
   "repository": {
     "type": "git",
